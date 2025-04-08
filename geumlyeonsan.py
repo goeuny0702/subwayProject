@@ -5,12 +5,12 @@ from tkinter import font
 
 info_window = tk.Tk()
 info_window.title("금련산역")
-info_window.geometry("1000x800")
+info_window.geometry("1000x800+450+100") 
 
 bm_font = font.Font(family="배달의민족 을지로체 TTF", size=13)
 
 # 배경 이미지 지정
-img1 = Image.open("breadBoard2.png")
+img1 = Image.open("image/breadBoard2.png")
 img1 = img1.resize((1000, 800), Image.LANCZOS)  # 최신 Pillow에 맞게 수정
 img1 = ImageTk.PhotoImage(img1)
 

@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 from tkinter import font
 
 info_window = tk.Tk()
-info_window.title("개금역")
+info_window.title("장전역")
 info_window.geometry("1000x800+450+100") 
 
 bm_font = font.Font(family="배달의민족 을지로체 TTF", size=17)
@@ -22,9 +22,13 @@ can.pack(fill="both", expand=True)
 can.create_image(0, 0, image=img1, anchor="nw")
 
 # 캔버스 위에 텍스트 추가
-can.create_text(500, 300, text="🍞 위파티", font=bm_font, fill="black")
-can.create_text(500, 330, text="운영시간: 09:00 - 22:00", font=bm_font, fill="black")
-can.create_text(500, 360, text="주소: 부산 부산진구 냉정로 166-1", font=bm_font, fill="black")
+can.create_text(500, 300, text="🍞 소사베이커리", font=bm_font, fill="black")
+can.create_text(500, 330, text="운영시간: 12:00 - 20:00", font=bm_font, fill="black")
+can.create_text(500, 360, text="주소: 부산 금정구 금정로119번길 14 1F", font=bm_font, fill="black")
+
+can.create_text(500, 410, text="🍞 호자베이커리", font=bm_font, fill="black")
+can.create_text(500, 440, text="운영시간: 10:00 - 18:30", font=bm_font, fill="black")
+can.create_text(500, 470, text="주소: 부산 금정구 금강로321번길 32 1층", font=bm_font, fill="black")
 
 # 닫기 버튼을 캔버스에 추가하려면 create_window 사용
 close_button = tk.Button(
