@@ -426,7 +426,7 @@ inter미남 = can.create_image(650, 403, image=image, anchor="center")
 #endregion 환승역 이미지
 
 # 이미지 불러오기
-main_img = PhotoImage(file="image/change_bread.png")
+main_img = PhotoImage(file="image/bread_on.png")
 main_img = main_img.subsample(2)  # 크기 50% 축소
 image_refs = []
 

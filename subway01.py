@@ -419,7 +419,7 @@ inter미남 = can.create_image(650, 403, image=image, anchor="center")
 #endregion
 
 # 이미지 불러오기
-main_img = PhotoImage(file="image/change_subway.png")
+main_img = PhotoImage(file="image/bread_off.png")
 main_img = main_img.subsample(2)  # 크기 50% 축소
 image_refs = []
 
@@ -466,6 +466,7 @@ circles = [
 # "메인" 버튼 이미지 삽입
 can.create_image(1350, 950, image=main_img)
 image_refs.append(main_img)  # 이미지가 사라지지 않도록 유지
+
 
 #region 역 클릭시 불러올 python 파일
 def handle_click(event):
